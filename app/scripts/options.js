@@ -1,3 +1,7 @@
 'use strict';
 
-console.log('\'Allo \'Allo! Option');
+var url = 'chrome://apps';
+chrome.tabs.update({
+    'url'     : url,
+    'selected': true
+});

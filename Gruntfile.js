@@ -130,7 +130,7 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: [ 
+                src: [
                      '<%= config.app %>/*.html'
                 ]
             }
@@ -238,10 +238,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         'images/{,*/}*.{webp,gif}',
-                        '{,*/}*.html',
-                        'styles/{,*/}*.css',
-                        'styles/fonts/{,*/}*.*',
-                        '_locales/{,*/}*.json',
+                        '{,*/}*.html'
                     ]
                 }]
             }
@@ -311,7 +308,6 @@ module.exports = function (grunt) {
         'chromeManifest:dist',
         'useminPrepare',
         'concurrent:dist',
-        'cssmin',
         'concat',
         'uglify',
         'copy',
